@@ -6,4 +6,13 @@ class ImagesController < ApplicationController
   def show
     @image = Image.find(params[:id])
   end
+
+  def new
+    @images = Image.new
+  end
+
+  def create
+    render :text => "Saving a picture. URL: #{params[:url]}, Title: #{params[:title]}, Artist: #{params[:artist]}"
+  end
+
 end
