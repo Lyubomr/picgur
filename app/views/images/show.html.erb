@@ -1,3 +1,4 @@
 <%= link_to "Back to images", images_url %>
+<%= link_to "Edit image", edit_image_path(@image) %>
 <p><%= @image.title %>, <%= @image.artist %></p>
 <%= image_tag @image.url %>
